@@ -55,6 +55,12 @@ public class DetectSms extends BroadcastReceiver {
                             OTPcode = makeMatch.group();
                             Toast.makeText(context, "senderNum: " + senderNum + " OTP is " + OTPcode , Toast.LENGTH_LONG).show();
 
+
+                            Intent intentNew = new Intent();
+                            intentNew.setAction("SMS_RECEIVED");
+                            intentNew.putExtra("otp_code",OTPcode);
+                            context.sendBroadcast(intentNew);
+
                             System.out.println(OTPcode);
                             /*if (message.lastIndexOf(verification) > 0) {
 
