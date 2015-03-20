@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DetectOTP</string>
+
+    <string name="welcome_msg">To recieve an OTP enter your number below</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detect_sms">DetectSms</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
